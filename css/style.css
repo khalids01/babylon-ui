@@ -582,94 +582,104 @@ body {
   padding-top: 40px !important;
 }
 
-.discover {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.discover .carousel-container {
   position: relative;
-  padding: 68px 0;
+  max-width: 100vw;
 }
-.discover::after {
+.discover .item {
+  padding: 68px 0;
+  position: relative;
+}
+.discover .item::after {
   content: "";
   position: absolute;
   z-index: 1;
   inset: 0;
   background: linear-gradient(-270deg, #000 0%, rgba(0, 0, 0, 0) 61.98%);
 }
-.discover .container {
-  position: relative;
-  z-index: 2;
+.discover .item img {
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  z-index: 1;
 }
-.discover .item {
-  padding-inline: 50px;
+.discover .item .wrapper {
+  padding-inline: 90px;
+  position: relative;
+  z-index: 3;
   background: transparent;
   display: flex;
   flex-direction: column;
   row-gap: 35px;
 }
-@media (max-width: 1526px) and (min-width: 768px) {
-  .discover .item {
-    padding-inline: 70px;
-  }
-}
 @media (max-width: 768px) {
-  .discover .item {
+  .discover .item .wrapper {
     row-gap: 16px;
   }
 }
-.discover .item h1 {
+.discover .item .wrapper h1 {
   font-size: 48px;
   font-weight: 700;
   max-width: 50%;
 }
-@media (max-width: 1024px) {
-  .discover .item h1 {
-    font-size: 36px;
+@media (max-width: 1400px) {
+  .discover .item .wrapper h1 {
     max-width: 70%;
   }
 }
+@media (max-width: 1024px) {
+  .discover .item .wrapper h1 {
+    font-size: 36px;
+  }
+}
 @media (max-width: 768px) {
-  .discover .item h1 {
-    font-size: 28px;
+  .discover .item .wrapper h1 {
     max-width: 100%;
+    font-size: 28px;
   }
 }
 @media (max-width: 576px) {
-  .discover .item h1 {
+  .discover .item .wrapper h1 {
     font-size: 24px;
   }
 }
-.discover .item p {
+.discover .item .wrapper p {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
   max-width: 50%;
 }
 @media (max-width: 1024px) {
-  .discover .item p {
+  .discover .item .wrapper p {
     font-size: 18px;
     max-width: 70%;
   }
 }
 @media (max-width: 768px) {
-  .discover .item p {
+  .discover .item .wrapper p {
+    max-width: 100%;
     font-size: 14px;
     font-weight: 600;
-    max-width: 100%;
   }
 }
-.discover .item a,
-.discover .item button,
-.discover .item .btn {
+.discover .item .wrapper a,
+.discover .item .wrapper button,
+.discover .item .wrapper .btn {
   font-size: 14px;
   padding: 10px 16px;
   width: 100%;
   max-width: 263px;
 }
 @media (max-width: 768px) {
-  .discover .item a,
-  .discover .item button,
-  .discover .item .btn {
+  .discover .item .wrapper a,
+  .discover .item .wrapper button,
+  .discover .item .wrapper .btn {
     max-width: 200px;
   }
 }
@@ -692,9 +702,10 @@ body {
   display: grid;
   place-items: center;
   position: absolute;
+  z-index: 5;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 3;
   color: var(--primary);
   font-size: 20px;
   height: 42px;
@@ -710,22 +721,22 @@ body {
   }
 }
 .discover .owl-nav button.owl-prev {
-  left: -3rem;
+  left: 1.8rem;
 }
-@media (max-width: 1526px) {
+@media (max-width: 476px) {
   .discover .owl-nav button.owl-prev {
-    left: 0;
+    left: 1rem;
   }
 }
 .discover .owl-nav button.owl-prev::before {
   content: "\f053";
 }
 .discover .owl-nav button.owl-next {
-  right: 0rem;
+  right: 4rem;
 }
-@media (max-width: 1526px) {
+@media (max-width: 476px) {
   .discover .owl-nav button.owl-next {
-    right: 1.8rem;
+    right: 3rem;
   }
 }
 .discover .owl-nav button.owl-next::before {

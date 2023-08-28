@@ -1,6 +1,6 @@
 $(function () {
   const date = new Date();
-  console.log(`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`);
+  // console.log(`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`);
   const config = {
     opens: "left",
     autoUpdateInput: true,
