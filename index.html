@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/logo.png" href="favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Babylon</title>
+  </head>
+  <body>
+    <section class="hero" style="background-image: url(./images/hero.png)">
+      <header class="container items-center">
+        <ul
+          class="list-unstyled social-links justify-content-end gap-3 d-none d-xl-flex nav-links"
+        >
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <nav class="w-full">
+          <!-- for large screen -->
+          <div class="d-xl-flex d-none xl-nav">
+            <a href="#" class="navbar-brand">
+              <img src="./images/logo.png" alt="" class="img-fluid logo" />
+            </a>
+
+            <ul
+              class="bg-white rounded-1 list-unstyled d-flex align-items-center mb-0 justify-evenly xl-screen nav-links"
+            >
+              <li class="active">
+                <a href="#" class="text-uppercase">home</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase">hotel & service apartment</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase">tours & travels</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase">cab services</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase">blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-uppercase">about us</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="btn sm btn-primary px-4 text-uppercase rounded-pill"
+                  >contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- for small screen -->
+          <div
+            class="d-xl-none d-navbar bg-body-tertiary rounded-1 py-3 sm-nav"
+          >
+            <a href="#" class="navbar-brand">
+              <img src="./images/logo.png" alt="" class="img-fluid logo" />
+            </a>
+
+            <div class="d-flex align-items-center">
+              <ul
+                class="list-unstyled social-links justify-content-end gap-3 d-flex pe-4"
+              >
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div class="container-fluid w-full">
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <a href="#" class="navbar-brand">
+                      <img
+                        src="./images/logo.png"
+                        alt=""
+                        class="img-fluid logo"
+                      />
+                    </a>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul
+                      class="bg-white rounded-1 list-unstyled d-flex align-items-center mb-0 justify-evenly nav-links"
+                    >
+                      <li class="active">
+                        <a href="#" class="text-uppercase">home</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-uppercase"
+                          >hotel & service apartment</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="text-uppercase">tours & travels</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-uppercase">cab services</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-uppercase">blog</a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-uppercase">about us</a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="btn sm btn-primary px-4 text-uppercase rounded-pill"
+                          >contact us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div>
+        <h1 class="text-white text-center title">
+          Babylon Hotel & Serviced <br />
+          Apartment
+        </h1>
+      </div>
+
+      <div class="container">
+        <div class="filter">
+          <div class="d-flex justify-content-center nav">
+            <a href="#">
+              <span class="wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="var(--icon)"
+                    d="M2 2h14v4h6v16H2V2zm18 6h-4v2h2v2h-2v2h2v2h-2v2h2v2h2V8zm-6-4H4v16h2v-2h6v2h2V4zM6 6h2v2H6V6zm6 0h-2v2h2V6zm-6 4h2v2H6v-2zm6 0h-2v2h2v-2zm-6 4h2v2H6v-2zm6 0h-2v2h2v-2z"
+                  />
+                </svg>
+                <span>Apartment</span>
+              </span>
+            </a>
+
+            <a href="#" class="active">
+              <span class="wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    fill="var(--icon)"
+                    d="M432 230.7a79.44 79.44 0 0 0-32-6.7H112a79.51 79.51 0 0 0-32 6.69A80.09 80.09 0 0 0 32 304v112a16 16 0 0 0 32 0v-8a8.1 8.1 0 0 1 8-8h368a8.1 8.1 0 0 1 8 8v8a16 16 0 0 0 32 0V304a80.09 80.09 0 0 0-48-73.3ZM376 80H136a56 56 0 0 0-56 56v72a4 4 0 0 0 5.11 3.84A95.5 95.5 0 0 1 112 208h4.23a4 4 0 0 0 4-3.55A32 32 0 0 1 152 176h56a32 32 0 0 1 31.8 28.45a4 4 0 0 0 4 3.55h24.46a4 4 0 0 0 4-3.55A32 32 0 0 1 304 176h56a32 32 0 0 1 31.8 28.45a4 4 0 0 0 4 3.55h4.2a95.51 95.51 0 0 1 26.89 3.85A4 4 0 0 0 432 208v-72a56 56 0 0 0-56-56Z"
+                  />
+                </svg>
+                <span>Hotel</span>
+              </span>
+            </a>
+
+            <a href="#">
+              <span class="wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 256"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    fill="var(--icon)"
+                    d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24ZM49.63 168h40.82l17 45.58A88.35 88.35 0 0 1 49.63 168ZM128 156a16 16 0 1 1 16-16a16 16 0 0 1-16 16Zm20.46 57.59L165.55 168h40.82a88.34 88.34 0 0 1-57.91 45.59ZM128 96a136.38 136.38 0 0 0-88 32.33V128a88 88 0 0 1 176 0v.33A136.38 136.38 0 0 0 128 96Z"
+                  />
+                </svg>
+                <span>Car services</span>
+              </span>
+            </a>
+          </div>
+
+          <form class="mt-4 filter-inputs">
+            <div class="span-3 with-icon">
+              <label for="check-in">Check in</label>
+              <input id="check-in" type="text" class="daterange-start" />
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+
+            <div class="span-1">
+              <label for="room">Room</label>
+              <select
+                class="form-select"
+                id="room"
+                aria-label="Default select example"
+              >
+                <option selected>Room1</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="span-3 with-icon">
+              <label for="check-out">Check Out</label>
+              <input type="text" name="" id="check-out" class="daterange-end" />
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+
+            <div class="span-3">
+              <label for="guests">Guests</label>
+              <select
+                class="form-select"
+                name="guests"
+                aria-label="Default select example"
+              >
+                <option selected>1 Passenger, Economy</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="grid-center w-full submit-wrapper">
+              <button
+                type="submit"
+                class="text-uppercase btn-primary rounded-pill w-"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="d-inline-block">Search Rooms</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h1 class="title-gradient text-uppercase">
+          <span>Our</span>
+          <b>Services</b>
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-6 col-xl-4 card-col">
+            <div class="card">
+              <img
+                src="./images//service1.jpeg"
+                class="card-img-top"
+                alt="our service"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Furnished Apartment</h5>
+                <p class="card-text text-grey">
+                  Lorem ipsum text goes here it can anything
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <p class="d-flex flex-column rate align-items-end mb-0">
+                    <b class="text-gradient">$65 - $173</b>
+                    <span class="text-grey">Apt rate / night</span>
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary xm rounded-pill text-uppercase"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4 card-col">
+            <div class="card">
+              <img
+                src="./images//service2.jpeg"
+                class="card-img-top"
+                alt="our service"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Furnished Apartment</h5>
+                <p class="card-text text-grey">
+                  Lorem ipsum text goes here it can anything
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <p class="d-flex flex-column rate align-items-end mb-0">
+                    <b class="text-gradient">$65 - $173</b>
+                    <span class="text-grey">Apt rate / night</span>
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary xm rounded-pill text-uppercase"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4 card-col">
+            <div class="card">
+              <img
+                src="./images//service3.jpeg"
+                class="card-img-top"
+                alt="our service"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Furnished Apartment</h5>
+                <p class="card-text text-grey">
+                  Lorem ipsum text goes here it can anything
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <p class="d-flex flex-column rate align-items-end mb-0">
+                    <b class="text-gradient">$65 - $173</b>
+                    <span class="text-grey">Apt rate / night</span>
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary xm rounded-pill text-uppercase"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4 card-col">
+            <div class="card">
+              <img
+                src="./images//service4.jpeg"
+                class="card-img-top"
+                alt="our service"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Furnished Apartment</h5>
+                <p class="card-text text-grey">
+                  Lorem ipsum text goes here it can anything
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <p class="d-flex flex-column rate align-items-end mb-0">
+                    <b class="text-gradient">$65 - $173</b>
+                    <span class="text-grey">Apt rate / night</span>
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary xm rounded-pill text-uppercase"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4 card-col">
+            <div class="card">
+              <img
+                src="./images//service1.jpeg"
+                class="card-img-top"
+                alt="our service"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Furnished Apartment</h5>
+                <p class="card-text text-grey">
+                  Lorem ipsum text goes here it can anything
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <p class="d-flex flex-column rate align-items-end mb-0">
+                    <b class="text-gradient">$65 - $173</b>
+                    <span class="text-grey">Apt rate / night</span>
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary xm rounded-pill text-uppercase"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4 card-col">
+            <div class="card">
+              <img
+                src="./images//service5.jpeg"
+                class="card-img-top"
+                alt="our service"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Furnished Apartment</h5>
+                <p class="card-text text-grey">
+                  Lorem ipsum text goes here it can anything
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <p class="d-flex flex-column rate align-items-end mb-0">
+                    <b class="text-gradient">$65 - $173</b>
+                    <span class="text-grey">Apt rate / night</span>
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary xm rounded-pill text-uppercase"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="discover"
+      style="background-image: url(./images/discover.jpeg)"
+    >
+      <div class="container">
+        <div class="carousel-container owl-carousel owl-theme">
+          <div class="item">
+            <h1 class="text-white">
+              Find the right Apartment Hotel & Resort for you
+            </h1>
+            <p class="text-white">
+              We’ll help you find the right resort for you and bring together
+              all the travel details for you and your guests.
+            </p>
+            <a href="#" class="btn bg-white rounded-pill fw-bold text-uppercase"
+              >discover more</a
+            >
+          </div>
+
+          <div class="item">
+            <h1 class="text-white">
+              Find the right Apartment Hotel & Resort for you
+            </h1>
+            <p class="text-white">
+              We’ll help you find the right resort for you and bring together
+              all the travel details for you and your guests.
+            </p>
+            <a href="#" class="btn bg-white rounded-pill fw-bold text-uppercase"
+              >discover more</a
+            >
+          </div>
+
+          <div class="item">
+            <h1 class="text-white">
+              Find the right Apartment Hotel & Resort for you
+            </h1>
+            <p class="text-white">
+              We’ll help you find the right resort for you and bring together
+              all the travel details for you and your guests.
+            </p>
+            <a href="#" class="btn bg-white rounded-pill fw-bold text-uppercase"
+              >discover more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hotel-resort">
+      <div class="container">
+        <div class="row row-gap-5">
+          <div class="col-12 col-lg-6 col-xl-4 card-col">
+            <div class="card">
+              <img
+                src="./images//service1.jpeg"
+                class="card-img-top"
+                alt="our service"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Furnished Apartment</h5>
+                <p class="card-text text-grey">
+                  Lorem ipsum text goes here it can anything
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <p class="d-flex flex-column rate align-items-end mb-0">
+                    <b class="text-gradient">$65 - $173</b>
+                    <span class="text-grey">Apt rate / night</span>
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary xm rounded-pill text-uppercase"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4 card-col">
+            <div class="card">
+              <img
+                src="./images//service2.jpeg"
+                class="card-img-top"
+                alt="our service"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Furnished Apartment</h5>
+                <p class="card-text text-grey">
+                  Lorem ipsum text goes here it can anything
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <p class="d-flex flex-column rate align-items-end mb-0">
+                    <b class="text-gradient">$65 - $173</b>
+                    <span class="text-grey">Apt rate / night</span>
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary xm rounded-pill text-uppercase"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4 card-col">
+            <div class="card">
+              <img
+                src="./images//service3.jpeg"
+                class="card-img-top"
+                alt="our service"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Furnished Apartment</h5>
+                <p class="card-text text-grey">
+                  Lorem ipsum text goes here it can anything
+                </p>
+                <div class="d-flex justify-content-between align-items-end">
+                  <p class="d-flex flex-column rate align-items-end mb-0">
+                    <b class="text-gradient">$65 - $173</b>
+                    <span class="text-grey">Apt rate / night</span>
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary xm rounded-pill text-uppercase"
+                    >Book now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="special-offer">
+      <div class="container">
+        <h1 class="title-gradient text-uppercase">
+          <span>Our</span>
+          <b>Special Offers</b>
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 card-col">
+            <div
+              class="item"
+              style="background-image: url(./images//special-offer1.jpeg)"
+            >
+              <div
+                class="d-flex flex-column rate align-items-start mb-0 header"
+              >
+                <b class="text-white">$65 - $173</b>
+                <span class="text-white">Apt rate / night</span>
+              </div>
+
+              <div class="footer">
+                <h5 class="text-center text-white mb-0 title text-uppercase">
+                  Dhaka
+                </h5>
+                <p class="text-white text-center desc">An amazing journey</p>
+                <div class="d-flex justify-content-center align-items-end">
+                  <a href="#" class="btn btn-light rounded-pill fw-medium"
+                    >Book a Hotel</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 card-col">
+            <div
+              class="item"
+              style="background-image: url(./images//special-offer2.jpeg)"
+            >
+              <div
+                class="d-flex flex-column rate align-items-start mb-0 header"
+              >
+                <b class="text-white">$65 - $173</b>
+                <span class="text-white">Apt rate / night</span>
+              </div>
+
+              <div class="footer">
+                <h5 class="text-center text-white mb-0 title text-uppercase">
+                  Sylhet
+                </h5>
+                <p class="text-white text-center desc">An amazing journey</p>
+                <div class="d-flex justify-content-center align-items-end">
+                  <a href="#" class="btn btn-light rounded-pill fw-medium"
+                    >Book a Hotel</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 card-col">
+            <div
+              class="item"
+              style="background-image: url(./images//special-offer3.jpeg)"
+            >
+              <div
+                class="d-flex flex-column rate align-items-start mb-0 header"
+              >
+                <b class="text-white">$65 - $173</b>
+                <span class="text-white">Apt rate / night</span>
+              </div>
+
+              <div class="footer">
+                <h5 class="text-center text-white mb-0 title text-uppercase">
+                  Coxs Bazar
+                </h5>
+                <p class="text-white text-center desc">An amazing journey</p>
+                <div class="d-flex justify-content-center align-items-end">
+                  <a href="#" class="btn btn-light rounded-pill fw-medium"
+                    >Book a Hotel</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 card-col">
+            <div
+              class="item"
+              style="background-image: url(./images//special-offer4.jpeg)"
+            >
+              <div
+                class="d-flex flex-column rate align-items-start mb-0 header"
+              >
+                <b class="text-white">$65 - $173</b>
+                <span class="text-white">Apt rate / night</span>
+              </div>
+
+              <div class="footer">
+                <h5 class="text-center text-white mb-0 title text-uppercase">
+                  Kuakata
+                </h5>
+                <p class="text-white text-center desc">An amazing journey</p>
+                <div class="d-flex justify-content-center align-items-end">
+                  <a href="#" class="btn btn-light rounded-pill fw-medium"
+                    >Book a Hotel</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-and-blogs">
+      <div class="container">
+        <h1 class="title-gradient2">
+          <span>Latest</span>
+          <b>News & Blogs</b>
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-md-6 card-col card-col-lg">
+            <div class="card">
+              <img
+                src="./images/blog-1.jpeg"
+                class="card-img-top"
+                alt="our blog"
+              />
+              <div class="card-body">
+                <p class="card-text text-grey">update</p>
+                <h5 class="card-title text-darkest">
+                  Lorem ipsum travel blog title goes here
+                </h5>
+                <p class="card-text text-grey">June 29, 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 card-col card-col-lg">
+            <div class="card">
+              <img
+                src="./images/blog-2.jpeg"
+                class="card-img-top"
+                alt="our blog"
+              />
+              <div class="card-body">
+                <p class="card-text text-grey">update</p>
+                <h5 class="card-title text-darkest">
+                  Lorem ipsum travel blog title goes here
+                </h5>
+                <p class="card-text text-grey">June 29, 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 card-col card-col-sm">
+            <div class="card">
+              <img
+                src="./images/blog-3.jpeg"
+                class="card-img-top"
+                alt="our blog"
+              />
+              <div class="card-body">
+                <p class="card-text text-grey">update</p>
+                <h5 class="card-title text-darkest">
+                  Lorem ipsum travel blog title goes here
+                </h5>
+                <p class="card-text text-grey">June 29, 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 card-col card-col-sm">
+            <div class="card">
+              <img
+                src="./images/blog-4.jpeg"
+                class="card-img-top"
+                alt="our blog"
+              />
+              <div class="card-body">
+                <p class="card-text text-grey">update</p>
+                <h5 class="card-title text-darkest">
+                  Lorem ipsum travel blog title goes here
+                </h5>
+                <p class="card-text text-grey">June 29, 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 card-col card-col-sm">
+            <div class="card">
+              <img
+                src="./images/blog-5.jpeg"
+                class="card-img-top"
+                alt="our blog"
+              />
+              <div class="card-body">
+                <p class="card-text text-grey">update</p>
+                <h5 class="card-title text-darkest">
+                  Lorem ipsum travel blog title goes here
+                </h5>
+                <p class="card-text text-grey">June 29, 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 card-col card-col-sm">
+            <div class="card">
+              <img
+                src="./images/blog-6.jpeg"
+                class="card-img-top"
+                alt="our blog"
+              />
+              <div class="card-body">
+                <p class="card-text text-grey">update</p>
+                <h5 class="card-title text-darkest">
+                  Lorem ipsum travel blog title goes here
+                </h5>
+                <p class="card-text text-grey">June 29, 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h1 class="title-gradient2">
+          <b>Reviews</b>
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 item-col">
+            <div class="item">
+              <div class="header">
+                <h3 class="title">"A real sense of community. nurtured"</h3>
+                <p class="text-grey desc mb-0">
+                  Really appreciate the help and support from the staff during
+                  these tough times. Shoutout to Katie for helping me always,
+                  even when I was out of the country. And always available when
+                  needed.
+                </p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn">View more</a>
+                </div>
+              </div>
+
+              <div class="body">
+                <div class="stars flex gap-3">
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-regular fa-star"></i> -->
+                </div>
+                <div class="username">
+                  <p class="mb-0">Olga</p>
+                  <span class="text-grey">Weave Studio - Kai Tak</span>
+                  <div class="flex mt-2">
+                    <img class="icon" src="./images/icons/google.svg" alt="" />
+                    <span class="text-grey">Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <img src="./images/review-1.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 item-col">
+            <div class="item">
+              <div class="header">
+                <h3 class="title">"A real sense of community. nurtured"</h3>
+                <p class="text-grey desc mb-0">
+                  Really appreciate the help and support from the staff during
+                  these tough times. Shoutout to Katie for helping me always,
+                  even when I was out of the country. And always available when
+                  needed.
+                </p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn">View more</a>
+                </div>
+              </div>
+
+              <div class="body">
+                <div class="stars flex gap-3">
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-regular fa-star"></i> -->
+                </div>
+                <div class="username">
+                  <p class="mb-0">Olga</p>
+                  <span class="text-grey">Weave Studio - Kai Tak</span>
+                  <div class="flex mt-2">
+                    <img class="icon" src="./images/icons/google.svg" alt="" />
+                    <span class="text-grey">Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <img src="./images/review-1.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 item-col">
+            <div class="item">
+              <div class="header">
+                <h3 class="title">"A real sense of community. nurtured"</h3>
+                <p class="text-grey desc mb-0">
+                  Really appreciate the help and support from the staff during
+                  these tough times. Shoutout to Katie for helping me always,
+                  even when I was out of the country. And always available when
+                  needed.
+                </p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn">View more</a>
+                </div>
+              </div>
+
+              <div class="body">
+                <div class="stars flex gap-3">
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+                  <img class="icon" src="./images/icons/star.svg" alt="" />
+
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-solid fa-star active"></i> -->
+                  <!-- <i class="fa-regular fa-star"></i> -->
+                </div>
+                <div class="username">
+                  <p class="mb-0">Olga</p>
+                  <span class="text-grey">Weave Studio - Kai Tak</span>
+                  <div class="flex mt-2">
+                    <img class="icon" src="./images/icons/google.svg" alt="" />
+                    <span class="text-grey">Google</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <img src="./images/review-1.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="best-services"
+      style="background-image: url(./images/map.png)"
+    >
+      <div class="container">
+        <div class="row justify-content-center pt-0">
+          <div class="col-12 col-md-10 col-lg-6">
+            <h1 class="title-gradient text-center">
+              <span>We always try to give you the</span>
+              <b>Best Services</b>
+            </h1>
+            <p class="text-center text-dark">
+              We always try to make our customer Happy. We provide all kind of
+              facilities. Your Satisfaction is our main priority.
+            </p>
+          </div>
+        </div>
+
+        <div class="row items-row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 item-col">
+            <div class="item grid-center">
+              <img src="./images/icons/calender.svg" alt="Experience" />
+              <h2 class="fw-bold mt-3 mb-0">15+</h2>
+              <p class="mb-0">
+                Years of <br />
+                Experience
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 item-col">
+            <div class="item grid-center">
+              <img src="./images/icons/bars.svg" alt="Travellers" />
+              <h2 class="fw-bold mt-3 mb-0">15+</h2>
+              <p class="mb-0">
+                Happy <br />
+                Travellers
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 item-col">
+            <div class="item grid-center">
+              <img src="./images/icons/location.svg" alt="places" />
+              <h2 class="fw-bold mt-3 mb-0">15+</h2>
+              <p class="mb-0">Places Visited</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 item-col">
+            <div class="item grid-center">
+              <img src="./images/icons/time.svg" alt="history" />
+              <h2 class="fw-bold mt-3 mb-0">15+</h2>
+              <p class="mb-0">Travel History</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="row justify-content-center pt-0">
+          <div class="col-12 col-md-10 col-lg-6">
+            <h1 class="text-center">
+              <span>Frequently asked</span>
+              <b class="text-uppercase text-gradient2">Question</b>
+            </h1>
+            <p class="text-center text-dark">
+              This page will help you most commonly asked questions according to
+              3D furniture modeling. If you have any more questions, feel free
+              to ask us.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center accordion-row">
+          <div class="col-12 col-lg-10">
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-semibold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne1"
+                    aria-expanded="true"
+                    aria-controls="collapseOne1"
+                  >
+                    <span>Question</span>
+                    <i class="fa-solid fa-plus plus"></i>
+                    <i class="fa-solid fa-minus minus"></i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We are a 3D rendering company that makes it easy for our
+                    clients to create a 3D model of products or anything. Check
+                    out our website for more information. This is how we make
+                    our clients feel comfortable about outsourcing their editing
+                    work to us.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-semibold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne2"
+                    aria-expanded="true"
+                    aria-controls="collapseOne2"
+                  >
+                    <span>Question</span>
+                    <i class="fa-solid fa-plus plus"></i>
+                    <i class="fa-solid fa-minus minus"></i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We are a 3D rendering company that makes it easy for our
+                    clients to create a 3D model of products or anything. Check
+                    out our website for more information. This is how we make
+                    our clients feel comfortable about outsourcing their editing
+                    work to us.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-semibold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne3"
+                    aria-expanded="true"
+                    aria-controls="collapseOne3"
+                  >
+                    <span>Question</span>
+                    <i class="fa-solid fa-plus plus"></i>
+                    <i class="fa-solid fa-minus minus"></i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We are a 3D rendering company that makes it easy for our
+                    clients to create a 3D model of products or anything. Check
+                    out our website for more information. This is how we make
+                    our clients feel comfortable about outsourcing their editing
+                    work to us.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-semibold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne4"
+                    aria-expanded="true"
+                    aria-controls="collapseOne4"
+                  >
+                    <span>Question</span>
+                    <i class="fa-solid fa-plus plus"></i>
+                    <i class="fa-solid fa-minus minus"></i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We are a 3D rendering company that makes it easy for our
+                    clients to create a 3D model of products or anything. Check
+                    out our website for more information. This is how we make
+                    our clients feel comfortable about outsourcing their editing
+                    work to us.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment-options pt-4 pb-5">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap justify-content-evenly align-items-center gap-4 wrapper"
+        >
+          <div class="item">
+            <img src="./images/master-card.png" alt="Master card" />
+          </div>
+
+          <div class="item">
+            <img src="./images/master-card.png" alt="Master card" />
+          </div>
+
+          <div class="item">
+            <img src="./images/visa-card.png" alt="Visa card" />
+          </div>
+
+          <div class="item">
+            <img src="./images/master-card.png" alt="Master card" />
+          </div>
+
+          <div class="item">
+            <img src="./images/visa-card.png" alt="Master card" />
+          </div>
+
+          <div class="item">
+            <img src="./images/master-card.png" alt="Master card" />
+          </div>
+
+          <div class="item">
+            <img src="./images/master-card.png" alt="Master card" />
+          </div>
+
+          <div class="item">
+            <img src="./images/visa-card.png" alt="Master card" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background-image: url(./images/footer.jpeg)">
+      <div class="container">
+        <div
+          class="d-flex justify-content-start xl:justify-content-evenly gap-4 flex-wrap links-wrapper"
+        >
+          <div class="item">
+            <h3 class="text-whtie title">Babylon</h3>
+            <ul class="text-capitalize">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Our Management</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Our Achievements</a>
+              </li>
+              <li>
+                <a href="#">Media Coverage</a>
+              </li>
+              <li>
+                <a href="#">eBrochure</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3 class="text-whtie title">We Provide</h3>
+            <ul class="text-capitalize">
+              <li>
+                <a href="#">Babylon Garden Furnished Apartments</a>
+              </li>
+              <li>
+                <a href="#">Babylon Tour & Travels Service</a>
+              </li>
+              <li>
+                <a href="#">Babylon Rent A car Service</a>
+              </li>
+              <li>
+                <a href="#">Bangladesh tour arrangements</a>
+              </li>
+              <li>
+                <a href="#">Overseas tour arrangements</a>
+              </li>
+              <li>
+                <a href="#">Hotel reservations</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3 class="text-whtie title">Inside Bangladesh Tours</h3>
+            <ul>
+              <li>
+                <a href="#">Dhaka - the capital of Bangladesh</a>
+              </li>
+              <li>
+                <a href="#">Shundarban - the home of tiger</a>
+              </li>
+              <li>
+                <a href="#">Cox's Bazar - worlds longest (120km) beach</a>
+              </li>
+              <li>
+                <a href="#">Kuakata - seeing both the sunrise and sunset</a>
+              </li>
+              <li>
+                <a href="#">Bandarban - the hill country</a>
+              </li>
+              <li>
+                <a href="#">Rajshahi - silk city and education city</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3 class="text-whtie title">Travel Information</h3>
+            <ul class="text-capitalize">
+              <li>
+                <a href="#">Travel info</a>
+              </li>
+              <li>
+                <a href="#">Passport & Visas</a>
+              </li>
+              <li>
+                <a href="#">Special Assistance</a>
+              </li>
+              <li>
+                <a href="#">Flight Status</a>
+              </li>
+              <li>
+                <a href="#">Flight Tracker</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h3 class="text-whtie title">Important Information</h3>
+            <ul class="text-capitalize">
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Site map</a>
+              </li>
+              <li>
+                <a href="#">Notice</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms & condition</a>
+              </li>
+              <li>
+                <a href="#">Useful links</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="d-flex justify-content-between gap-4 flex-wrap contact-wrapper"
+        >
+          <div class="item">
+            <p class="text-uppercase">Call us now</p>
+            <h1>+ 1 634 7638 654</h1>
+          </div>
+
+          <div class="item">
+            <p class="text-center copy-write">
+              Copyright © 2023 babylonbd.com, All rights reserved. Photo Credit
+              CMUD
+            </p>
+          </div>
+
+          <div class="item">
+            <ul
+              class="list-unstyled social-links justify-content-end gap-3 d-flex nav-links"
+            >
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
